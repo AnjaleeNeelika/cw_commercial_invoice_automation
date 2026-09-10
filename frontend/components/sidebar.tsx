@@ -28,7 +28,7 @@ export default function Sidebar() {
   const pathname = usePathname();
 
   return (
-    <ShadcnSidebar collapsible="icon">
+    <ShadcnSidebar collapsible="icon" className="bg-sidebar">
       <SidebarHeader className="h-16 justify-center border-b border-sidebar-border px-4">
         <div className="flex items-center gap-3">
           <div className="flex size-8 shrink-0 items-center justify-center rounded-lg bg-sidebar-primary text-sidebar-primary-foreground">
