@@ -102,7 +102,7 @@ export async function POST(request: Request) {
 
     const { data: updatedInvoice, error: updateError } = await supabaseAdmin
       .from("cw_commercial_invoice_automation_invoices")
-      .update({ extracted_data: extractedData })
+      .update({ extracted_data: extractedData, status: "Extracted" })
       .eq("document_uploaded_path", document_uploaded_path)
       .select("document_name")
       .maybeSingle();

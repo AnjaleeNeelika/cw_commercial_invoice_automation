@@ -44,9 +44,11 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
             <Toaster />
             <SidebarProvider defaultOpen>
               <Sidebar />
-              <SidebarInset className="min-h-screen overflow-hidden bg-muted/20">
-                <Navbar />
-                <main className="min-h-0 flex-1 overflow-auto">{children}</main>
+              <SidebarInset className="flex h-screen min-h-0 flex-1 flex-col overflow-hidden bg-muted/20">
+                <div className="shrink-0">
+                  <Navbar />
+                </div>
+                <main className="min-h-0 flex-1 overflow-y-auto">{children}</main>
               </SidebarInset>
             </SidebarProvider>
           </TooltipProvider>

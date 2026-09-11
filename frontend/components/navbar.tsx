@@ -9,7 +9,7 @@ export default function Navbar() {
   const { theme, setTheme } = useTheme();
 
   return (
-    <nav className="sticky top-0 z-50 border-b border-border/80 bg-background/80 backdrop-blur supports-[backdrop-filter]:bg-background/70">
+    <nav className="sticky top-0 z-50 border-b border-border/80 bg-sidebar/80 backdrop-blur supports-[backdrop-filter]:bg-sidebar/70">
       <div className="mx-auto flex h-16 max-w-7xl items-center justify-between px-4 sm:px-6 lg:px-8">
         <div className="text-lg font-semibold tracking-tight text-foreground">
           InvoiceFlow

@@ -4,4 +4,5 @@ export type Document = {
     document_name: string;
     document_uploaded_path: string;
     extracted_data: unknown;
+    status: string;
 }
