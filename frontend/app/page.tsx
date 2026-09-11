@@ -14,8 +14,8 @@ function Dashboard() {
     <div className="mx-auto w-full max-w-6xl space-y-8 p-5 sm:p-8">
       <div className="flex flex-col justify-between gap-4 sm:flex-row sm:items-end">
         <div className="space-y-2">
-          <Badge variant="secondary">Commercial operations</Badge>
-          <h1 className="text-3xl font-semibold tracking-tight">Invoice dashboard</h1>
+          <Badge variant="default" className="bg-primary/10 text-foreground dark:bg-primary/50">Commercial operations</Badge>
+          <h1 className="text-3xl font-semibold tracking-tight">Invoice Dashboard</h1>
           <p className="max-w-xl text-muted-foreground">
             Upload, validate, and extract structured data from commercial invoices.
           </p>
