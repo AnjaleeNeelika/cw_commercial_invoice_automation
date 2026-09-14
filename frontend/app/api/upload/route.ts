@@ -20,6 +20,13 @@ const getDocumentType = (file: File) => {
     return "spreadsheet";
   }
 
+  if (
+    file.type === "image/png" || name.endsWith(".png") ||
+    file.type === "image/jpeg" || name.endsWith(".jpeg") || name.endsWith(".jpg")
+  ) {
+    return "image";
+  }
+
   return null;
 };
 

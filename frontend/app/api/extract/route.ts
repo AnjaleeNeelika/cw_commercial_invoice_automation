@@ -7,6 +7,7 @@ const getDocumentType = (documentUploadedPath: string) => {
   const lowerPath = documentUploadedPath.toLowerCase();
   if (lowerPath.endsWith(".pdf")) return "PDF";
   if (lowerPath.endsWith(".xls") || lowerPath.endsWith(".xlsx") || lowerPath.endsWith(".csv")) return "Spreadsheet";
+  if (lowerPath.endsWith(".png") || lowerPath.endsWith(".jpg") || lowerPath.endsWith(".jpeg")) return "Image";
   return "Document";
 };
 
